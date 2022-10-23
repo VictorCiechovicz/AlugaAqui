@@ -10,7 +10,7 @@ padding-right:25px;
 
 export const Header =styled.View`
 align-items: center;
-margin-top: 50px;
+margin-top:${RFValue(50)}px;
 
 `;
 

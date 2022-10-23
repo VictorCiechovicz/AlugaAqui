@@ -98,7 +98,6 @@ export function SignIn() {
             keyboardType="numeric"
             error={errors.password && errors.password.message}
             secureTextEntry
-
           />
           <ForgetPassword>
             <ForgetPasswordTitle> Esqueceu a senha?</ForgetPasswordTitle>
@@ -107,7 +106,6 @@ export function SignIn() {
         <Button title="Log In" onPress={handleSubmit(handleRegister)} />
 
         <SocialLogin>
-
           <UpSide>
             <Line />
             <SocialLoginTitle>Ou continue com</SocialLoginTitle>
@@ -127,7 +125,6 @@ export function SignIn() {
               <InstagramImage source={Instagram} />
             </InstagramLogo>
           </SocialMidia>
-
         </SocialLogin>
 
         <Register>

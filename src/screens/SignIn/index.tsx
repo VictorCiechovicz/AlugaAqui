@@ -29,7 +29,7 @@ import {
   InstagramImage,
   UpSide
 } from './styled'
-import { Input } from '../../components/Input'
+
 import { InputForm } from '../../components/InputForm'
 import { Button } from '../../components/Button'
 
@@ -37,13 +37,7 @@ import { useForm } from 'react-hook-form'
 import * as Yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
 
-import {
-  Modal,
-  TouchableWithoutFeedback,
-  Keyboard,
-  Alert,
-  Text
-} from 'react-native'
+import { TouchableWithoutFeedback, Keyboard, Text } from 'react-native'
 
 const schema = Yup.object().shape({
   email: Yup.string()
@@ -61,12 +55,16 @@ interface FormData {
 }
 
 export function SignIn() {
+
+
   const {
     control,
     handleSubmit,
     formState: { errors }
   } = useForm({ resolver: yupResolver(schema) })
 
+
+  
   function handleRegister(form: FormData) {
     const data = {
       email: form.email,
